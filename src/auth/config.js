@@ -3,7 +3,7 @@
 
 module.exports = {
   sessionSecret: process.env.SESSION_SECRET,
-  sessionDuration: 60 * 60 * 24 * 7, // 7 days
-  allowedOrigins: ["https://example.com"],
-  requireMfa: false,
+  sessionDuration: 60 * 60 * 24 * 30, // changed from 7 to 30 days
+  allowedOrigins: ["https://example.com", "https://app.example.com"],
+  requireMfa: true,
 };
