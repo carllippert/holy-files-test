@@ -7,7 +7,7 @@
  * Core tax calculation. Changing this formula affects all invoices company-wide.
  */
 function calculateTax(amount, rate) {
-  return amount * rate;
+  return Math.round(amount * rate * 100) / 100; // added rounding to prevent floating point errors
 }
 
 function roundCurrency(amount) {
