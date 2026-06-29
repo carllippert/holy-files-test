@@ -1,0 +1,10 @@
+{
+  "name": "holy-files-test",
+  "version": "1.0.0",
+  "description": "Test repository for holy-files end-to-end validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test tests/"
+  },
+  "license": "MIT"
+}
